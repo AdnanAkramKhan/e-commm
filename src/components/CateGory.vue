@@ -53,12 +53,7 @@ created() {
 
 </script>
 <style>
-/*
-Code snippet by maridlcrmn for Bootsnipp.com
-Follow me on Twitter @maridlcrmn
-Image credits: unsplash.com, uifaces.com/authorized
-Image placeholders: placemi.com
-*/
+
 
 
 #t-cards {
