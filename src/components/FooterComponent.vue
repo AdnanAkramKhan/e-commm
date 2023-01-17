@@ -59,7 +59,7 @@
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   section {
       padding: 16px 0;
-      height:26rem;
+      height:33rem;
   }
   
   section .section-title {

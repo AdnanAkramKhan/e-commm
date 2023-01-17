@@ -6,7 +6,8 @@
       extension-height="30"
     >
     <v-toolbar-title @click="Home()">
-       <v-btn class=" darken-2"  style="background-color: #345;">
+      <img src="../assets/images/logo (1).svg" >
+       <v-btn class=" darken-2"  style="background-color: #345;color:white">
         PF-Store </v-btn> </v-toolbar-title>
       
     <v-spacer></v-spacer>
@@ -18,10 +19,10 @@
       ></v-text-field>
           <!-- clicked function and pass argument  -->
       <v-btn icon  @click="Search(search_input)">
-        <v-icon>mdi-magnify</v-icon>
+        <v-icon style="color:white">mdi-magnify</v-icon>
       </v-btn>
 
-      <v-btn class=" darken-2"  style="background-color: #345;"
+      <v-btn class=" darken-2"  style="background-color: #345; box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); "
       @click="AddProduct()">Add Product</v-btn>
      
       <v-btn class=" darken-2"  style="background-color: #345;"

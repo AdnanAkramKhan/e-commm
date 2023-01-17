@@ -1,7 +1,7 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" style="background-color:lightblue">
     <!-- carousel for main page  -->
-<div>
+<div class="container">
   <h2>Trending Products</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -18,7 +18,7 @@
       </div>
 
       <div class="item">
-        <img src="@/assets/images/mobile.jpg" alt="Mobile" style="width:100%;">
+        <img src="@/assets/images/Trending-Products-to-Sell-Online-1.jpg" alt="Mobile" style="width:100%;">
       </div>
     
       <div class="item">
@@ -37,17 +37,20 @@
     </a>
   </div>
 </div>
-
+  <!-- static images  -->
+  
 
     <!-- responsive card  -->
 <section id="t-cards" v-if="this.page>=1">
-  <div class="container">
-    <h1 style="margin:2rem">Our Products</h1>
+
+  <div class="container" >
     <div class="row">
-           <div class="col-sm-6 col-md-4" 
+    
+           <div class="col-sm-6 col-md-4" style="box-shadow: 0px 3px 10px grb(0 0 0 / 0.5) "
            v-for="product in product.products"
            @click="onProduct(product.id)"
           :key="product.id">
+         
               <div class="panel panel-default panel-card">
                   <div class="panel-heading">
                       <img :src="product.thumbnail"
