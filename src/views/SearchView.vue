@@ -6,6 +6,7 @@
     <div class="container" >
         <h1 style="margin: 3rem"> Search Products</h1>
       <div class="row">
+        <!-- getting search product  -->
              <div class="col-sm-6 col-md-4" 
              v-for="searchstate in GetSearched.products" :key="searchstate"
             

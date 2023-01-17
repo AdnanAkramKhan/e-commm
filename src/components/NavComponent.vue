@@ -5,19 +5,18 @@
       style="background-color: #345;"
       extension-height="30"
     >
-    <v-toolbar-title @click="Home()"> PF-Store </v-toolbar-title>
-    <v-btn class=" darken-2"  style="background-color: #345;"
-      @click="Home()">
-Home</v-btn>
-    
+    <v-toolbar-title @click="Home()">
+       <v-btn class=" darken-2"  style="background-color: #345;">
+        PF-Store </v-btn> </v-toolbar-title>
       
     <v-spacer></v-spacer>
       <v-text-field
       class="w-8"
        v-model = "search_input"
          single-line
-        
+      
       ></v-text-field>
+          <!-- clicked function and pass argument  -->
       <v-btn icon  @click="Search(search_input)">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
@@ -37,9 +36,8 @@ Home</v-btn>
              </span>
         </v-badge>
      
-      <v-btn icon  @click="Logout">
-        <span class='material-icons'>logout</span>
-       </v-btn>
+      <v-btn icon  @click="Login">
+        <i class="fa fa-user" aria-hidden="true"></i>       </v-btn>
 
     </v-toolbar>
 </template>
@@ -58,7 +56,7 @@ export default {
     Home() {
       this.$router.push({ name: "home" });
     },
-
+   // funtion push and pass parameter 
     Search() {
       this.$router.push({
         name: "SearchView",
@@ -66,16 +64,15 @@ export default {
       });
     },
     AddProduct() {
-      this.$router.push({ name: "AddProduct" });
+      this.$router.push({ name: "AddProduct" })
     },
     ShowCart() {
-      this.$router.push({ name: "AddCart" }), console.log(this.count);
+      this.$router.push({ name: "AddCart" })
     },
     categoryPage() {
       this.$router.push({ name: "CategoryView" });
     },
-    Logout() {
-      alert("are you want to logout")
+    Login() {
       this.$router.push({ name: "LoginView" });
     },
   },

@@ -56,7 +56,7 @@
         if (!login.token) {                           //condition for authentication check
           alert("The username or password is incorrect!");
         } else {
-          this.$router.push({ name: "home" });
+          this.$router.push({ name: "AddCart" });
         }
       },
     },

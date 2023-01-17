@@ -12,43 +12,50 @@ import AddProduct from '../views/AddProduct.vue'
 Vue.use(VueRouter)
 
 const routes = [
+  //router for home
   {
-    path: '/home',
+    path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView 
   },
+  //router for login
 
 {
-    path: '/',
+    path: '/login',
     name: 'LoginView',
     component: LoginView
   },
+  //router for product detail
   {
     path: '/product_detail',
     name: 'product_detail',
     component: ProductDetail
   },
+  //router for new product
   {
     path: '/add_product',
     name: 'AddProduct',
     component: AddProduct
   },
-  
+  //router for search product
   {
     path: '/searchview/:id',
     name: 'SearchView',
     component: SearchView
   },
+  //router for single category
   {
     path: '/category_product',
     name: 'category_product',
     component: CategoryProduct
   },
+  //router for all category
   {
     path: '/category',
     name: 'CategoryView',
     component: CategoryView
   },
+  //router for new cart
   {
     path: '/add_cart/:id',
     name: 'AddCart',

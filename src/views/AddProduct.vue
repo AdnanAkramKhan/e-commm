@@ -2,11 +2,13 @@
     <div class="add_product">   
 		<NavComponent /> 
   <!--  add product  -->
-  <div class="container">
+  <div>
 			<div class="main">
+					
 				<div class="main-center">
+					<h1> Product</h1>
+				
 					<form action="post">
-						<h1>User Product</h1>
 						<!-- add title input from user -->
 						<div class="form-group">
 							<label for="name">Title</label>
@@ -159,8 +161,8 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
 
 }
 span.input-group-addon i {
-    color: #009edf;
-    font-size: 17px;
+    background-color: #345;
+ font-size: 17px;
 }
 
 </style>+

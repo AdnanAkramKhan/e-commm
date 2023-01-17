@@ -13,7 +13,6 @@
 import NavComponent from '@/components/NavComponent.vue';
 import ProDuct from '@/components/ProDuct.vue';
 import FooterComponet from '@/components/FooterComponent.vue'
-// import { mapActions } from 'vuex';
 export default {
   name:'HomeView',
   components :{
@@ -21,11 +20,5 @@ export default {
     ProDuct,
     FooterComponet,
      },
-  //    methods:{
-  //   ...mapActions("fetchAllProduct")
-  // },
-  // mounted(){
-  //   this.fetchAllProduct()
-  // },
 }
 </script>

@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 Vue.use(Vuex);
 export default new Vuex.Store({
-  // all state of ecomerce 
+  // all store state of ecomerce 
   state: {
     product:[],
     category:[],
@@ -73,6 +73,7 @@ export default new Vuex.Store({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          // add value in api 
           title: input.add_title,
           description: input.add_description,
           price: input.add_price,
@@ -114,37 +115,22 @@ export default new Vuex.Store({
       return await fetch(` https://dummyjson.com/products/category/${this.state.singlecategory}` )
         .then((response) => response.json())
         .then((data) => {
+          // mutate data 
          context.commit("singleCategory", data.products);
+
          console.log(data)
         },
         )
         .catch((err) => console.error(err));
     },
-    // async RemoveProduct(){
-      
-    //     await fetch('https://dummyjson.com/products/1', {
-    //       method: 'DELETE',
-    //     })
-    //     .then(res => res.json())
-    //     .then(console.log);
-     // commit('RemoveProduct',Delproduct)
-      // let singleproduct = this.state.singleproduct.filter(s=>s.id !=Delproduct.id)
-      // this.state.singleproduct = singleproduct
-      
-      
-    // }
-
-
     async DeleteProduct(_,id){
-      console.log(id)
      return await fetch(` https://dummyjson.com/products/${id}` , {
         method: 'DELETE',
       })
-      .then(res => res.json())
+      .then(res => res.json()) //show reponse in console
       .then(console.log);
-      // consol e.log("yes")
-           
       },
+    
       RemoveCart(_,id){
         let addcart = this.state.addCart.filter(s=>s.id !=id)
         this.state.addCart = addcart
@@ -153,6 +139,7 @@ export default new Vuex.Store({
       }
 
   },
+  // getter will use getting state in view component 
   
   getters: {
     product(state) {

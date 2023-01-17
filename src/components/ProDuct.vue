@@ -1,7 +1,7 @@
 <template>
   <v-app id="inspire">
     <!-- carousel for main page  -->
-<div class="container">
+<div>
   <h2>Trending Products</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -127,9 +127,7 @@ export default {
       }
      
   },
-  // created() {
-  //     // this.fetchAllProduct();
-  // },
+  
   mounted(){
     this.fetchAllProduct()
   }

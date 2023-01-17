@@ -5,8 +5,10 @@
 <h1 style="margin-left:10rem">Categories</h1>
   <div class="container">
       <div class="row">
+          <!-- we wil use loop for all categories c_d fun move
+            ' and use for single category  -->
            <div class="col-sm-6 col-md-3"
-                v-for="category in category" :key="category" 
+                v-for="category in category" :key="category"  
                 rounded
                 color="primary"
                 dark
@@ -37,16 +39,15 @@ computed: {
   ...mapGetters(["category"]),
 },
 methods: {
-  ...mapActions(["fetchAllCategory"]),
+  ...mapActions(["fetchAllCategory"]), //work on action
   Category_Detail(category){
-    console.log(category)
+    // move and pass parameter as props 
     this.$router.push({name:'category_product',params:{category:category}})
-
-    this.$store.state.singlecategory=category
+    this.$store.state.singlecategory=category //value will store in state
   }
 },
 created() {
-  this.fetchAllCategory();
+  this.fetchAllCategory();  //funtion will intialized
 },
 };
 

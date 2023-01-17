@@ -1,8 +1,7 @@
 <template>
   <div>
     <NavComponent />
-    <!-- category title  -->
-          <!-- category datail used  -->
+    <!-- category datail used  -->
  <section id="t-cards">
   <div class="container">
     

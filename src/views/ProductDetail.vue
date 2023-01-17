@@ -2,7 +2,7 @@
   <div>
     <NavComponent />
     <h1 style="margin-left:10rem">{{ singleproduct.category }}</h1>
-    
+     <!-- get product detail  -->
     <div class="row">
       
                <div class="col-xs-4 item-photo">
@@ -115,14 +115,12 @@ import FooterComponent from "../components/FooterComponent";
     },
     methods:{
       ...mapActions(["singleProducts"]),
-    //  singleProduct(){
-    //     console.log(this.$store.state.singleproduct)
-    //   },
-
+      // use for store data and push new page 
       addCart(product){
           this.$store.dispatch('AddCarts' , product),
-          this.$router.push({name:'AddCart'}) 
+          this.$router.push({name:'LoginView'}) 
         },
+
         Delete(id){
           this.$store.dispatch('DeleteProduct', id)
           alert("Deleted Sucessfully!")
@@ -130,12 +128,11 @@ import FooterComponent from "../components/FooterComponent";
 
         }
     },
-   unmounted(){
-      this.Delete(
-        alert("are you rell")
-      )
-    }
-    ,
+    // updated(){
+    //   this.Delete(
+    //     alert("are you rell")
+    //   )
+    // },
   created() {
     this.singleProducts();
   },

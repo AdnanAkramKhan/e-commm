@@ -6,7 +6,8 @@
         <div class="row text-center text-xs-center text-sm-left text-md-left">
           <div class="col-xs-12 col-sm-6 col-md-6">
             <h5>About</h5>
-            <p class="list-unstyled about quick-links">
+            <!-- static About paragraph  -->
+            <p class="list-unstyled about quick-links"> 
                  Programmer Force CODE WANT TO BE SIMPLE is an intitative to help the 
                 upcomming programmers with the code. Programmer Force focuses on providing
                 the most efficient code as code wants to be simple. We will help programmers build to 
