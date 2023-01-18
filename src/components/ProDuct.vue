@@ -1,8 +1,112 @@
 <template>
+
   <v-app id="inspire" style="background-color:lightblue">
+    <h1 style="margin-left:2rem; margin-top:2rem">New Products</h1>
+     
+    <!-- Most Views product -->
+  <div class="container">
+    <div class="row">
+<!-- card 1 -->
+<div class="card col-md-4 col-sm-4">
+  <img src="../assets/images/product_work1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">iPhone</h5>
+    <p class="card-text">An apple mobile which is nothing like apple</p>
+    <p>rating: 4.5</p>
+  </div>
+</div>
+<!-- card 2 -->
+<div class="card col-md-4 col-sm-4">
+  <img src="../assets/images/card2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Nike shoe</h5>
+    <p class="card-text"> Core associations for Nike include: innovative technology, high quality/stylish products, joy and celebration of sports, maximum performance, self-empowerment and inspiring</p>
+    <p>rating:4.0</p>
+  </div>
+</div>
+
+<!-- card 3 -->
+<div class="card col-md-4 col-sm-4">
+  <img src="../assets/images/card4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">OutFitters Shoe</h5>
+    <p class="card-text">an outer covering for the human foot typically having a thick or stiff sole with an attached heel and an upper part of lighter material (such as leather) :</p>
+    <a href="#">rating:4.0</a>
+  </div>
+</div>
+</div>
+   
+<!-- row 2 -->
+<div class="row">
+<!-- card 1 -->
+<div class="card col-md-4 col-sm-4">
+  <img src="../assets/images/card3.jpg" style="height:15rem" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Sumsung A32</h5>
+    <p class="card-text">Glass front (Gorilla Glass 5), plastic frame, plastic back</p>
+    <p>rating:3.5</p>
+  </div>
+</div>
+<!-- card 2 -->
+<div class="card col-md-4 col-sm-4">
+  <img src="../assets/images/card5.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Sumsung A32</h5>
+    <p class="card-text">Glass front (Gorilla Glass 5), plastic frame, plastic back</p>
+    <p>rating:3.5</p>
+</div>
+</div>
+
+<!-- card 3 -->
+<div class="card col-md-4 col-sm-4">
+  <img src="../assets/images/card6.jpg" style="height:15rem" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">SHirt</h5>
+    <p class="card-text">Denizen Roll-Up Shirt; an everyday piece you'll wear for comfort and style.</p>
+    <p>rating:5.0</p>
+  </div>
+</div>
+</div>
+   
+<!-- row 3 -->
+<div class="row">
+<!-- card 1 -->
+<div class="card col-md-4 col-sm-4">
+  <img src="../assets/images/card7.jpg" style="height:12rem" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Samsung A30</h5>
+    <p class="card-text">The phone has a huge battery of 4000 mAh, Li-Polymer. With Samsung Galaxy A30 you can see a design that fits easily in your hands, pocket, or bag. Effortlessly look through photographs and send messages on the 6.4 inches HD screen.</p>
+    <p href="#">rating:4.0</p>
+  </div>
+</div>
+<!-- card 2 -->
+<div class="card col-md-4 col-sm-4">
+  <img src="../assets/images/card8.jpg" style="height:10rem" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Brogan Shoes</h5>
+    <p class="card-text">Borjan offers its customers the best shoes for men in Pakistan. We have the highest quality men’s shoes and leather shoes in Pakistan for great prices. </p>
+    <p>rating:5.0</p>
+  </div>
+</div>
+
+<!-- card 3 -->
+<div class="card col-md-4 col-sm-4">
+  <img src="../assets/images/card9.jpg" style="height:13rem" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">
+Brandsroots
+</h5>
+    <p class="card-text">Summer Crew Neck Long Sleeve Tee Shirt For Men</p>
+    <p>rating:3.5</p>
+  </div>
+</div>
+</div>
+   
+</div>
+  
     <!-- carousel for main page  -->
-<div class="container">
-  <h2>Trending Products</h2>  
+<div class="container-fluid">
+  <h2 style="margin-top:2rem; margin-top:2rem;padding:2rem">Trending Products</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -38,7 +142,7 @@
   </div>
 </div>
   <!-- static images  -->
-  
+ 
 
     <!-- responsive card  -->
 <section id="t-cards" v-if="this.page>=1">
@@ -139,11 +243,13 @@ export default {
 
 </script>
 <style scoped>
-#t-cards {
-  padding-top: 80px;
-  padding-bottom: 80px;
-
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
+
+
 
 /********************************/
 /*          Panel cards         */
@@ -219,6 +325,9 @@ export default {
   background-color: #fff;
 } 
 
+.search input{
+ background-color: bisque;
+}
 
 .panel.panel-card:hover .panel-heading {
   height: 55px;
