@@ -52,7 +52,7 @@ created() {
 };
 
 </script>
-<style>
+<style scoped>
 
 
 

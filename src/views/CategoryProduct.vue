@@ -66,7 +66,7 @@ created() {
 };
 
 </script>
-<style>
+<style scoped>
 #state{
 display: block;
 }
