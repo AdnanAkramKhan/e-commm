@@ -11,7 +11,7 @@
              v-for="searchstate in GetSearched.products" :key="searchstate"
             
            >
-                <div class="panel panel-default panel-card">
+               <div class="panel panel-default panel-card" @click="Get_Detail">
                     <div class="panel-heading">
                         <img :src="searchstate.thumbnail"
                  />
